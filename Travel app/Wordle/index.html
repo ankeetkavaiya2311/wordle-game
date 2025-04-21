@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Play Wordle - A word guessing game where you have 6 attempts to guess a 5-letter word">
+    <meta name="keywords" content="wordle, word game, puzzle, guessing game">
+    <meta name="author" content="Your Name">
+    <meta property="og:title" content="Wordle Game">
+    <meta property="og:description" content="Play Wordle - A word guessing game">
+    <meta property="og:type" content="website">
+    <title>Wordle Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Wordle</h1>
+            <div class="game-info">
+                <div class="timer">Time: <span id="timer">00:00</span></div>
+            </div>
+        </header>
+
+        <main>
+            <div id="game-board"></div>
+            
+            <div class="controls">
+                <button id="submit-btn" class="btn">Submit</button>
+                <button id="restart-btn" class="btn">New Game</button>
+            </div>
+
+            <div id="message" class="message"></div>
+        </main>
+
+        <div class="stats">
+            <h2>Statistics</h2>
+            <div class="stats-container">
+                <div class="stat">
+                    <div class="stat-number" id="games-played">0</div>
+                    <div class="stat-label">Played</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number" id="games-won">0</div>
+                    <div class="stat-label">Won</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number" id="current-streak">0</div>
+                    <div class="stat-label">Current Streak</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number" id="max-streak">0</div>
+                    <div class="stat-label">Max Streak</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="words.js"></script>
+    <script src="wordle.js"></script>
+</body>
+</html> 
